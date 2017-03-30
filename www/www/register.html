@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/register.js"></script>
+	<script src="js/check_register.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+</head>
+<body>
+<div>
+	<h1>Sign Up</h1>
+		<div class="register">
+		<table>
+			<tr>
+				<td>
+					Username:
+				</td>
+				<td>
+					<input type="text" id="username" name ="username" onchange='check_username()'/>
+					<span id="username_check"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Password:
+				</td>
+				<td>
+					<input type="password" id="password" name="password"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					E-mail:
+				</td>
+				<td>
+					<input type="text" id="email" name="email"  onchange='check_email()'/>
+					<span id="email_check"></span>
+				</td>
+			</tr>
+			<tr>
+	            <td colspan="2" id="register_td"><button type="button" id="register">register</button>   </td>
+			</tr>
+		</table>		
+		</div>
+	<br>
+	<div class="index_div2">
+        <form action="/www/index.html">
+            <input type="submit" value="Back to Home Page">
+        </form>
+	</div>
+	<br>
+	<div id="register_res"></div>
+
+
+</div>
+</body>
+</html>	

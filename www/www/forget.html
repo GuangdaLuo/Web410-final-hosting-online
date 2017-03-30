@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find my password</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="/js/forget.js"></script>
+</head>
+<body>
+	<h1>Find my password</h1>
+	<p>Please input  your user name. We will send a security code to your register email.</p>
+
+	<div class="send_email">
+    <table>
+        <tr>
+            <td>username:</td>
+            <td><input type="text" id="username"></td>
+            <td colspan="2" id="forget_td"><button type="button" id="send_email">send_email</button></td>
+        </tr>
+
+    <!--</table>-->
+	<!--</div>-->
+
+	<!---->
+	<!--<div class="reset_pw">-->
+    <!--<table>-->
+        <tr><div id="send_response"></div></tr><tr></tr>
+        <tr>
+            <td>Security code:</td>
+            <td><input type="text" id="Security_code"></td>
+
+        </tr>
+        <tr>
+            <td>New password:</td>
+            <td><input type="password" id="new_password"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2" id="confirm_td"><button type="button" id="Confirm">Confirm</button>   </td>
+        </tr>
+    </table>
+	</div>
+	<div id="reset_response"></div>
+	<!-- <div id="send_response"></div>
+	<form method="POST" action="../cgi-bin/resetpw.py">
+		
+		<p>Security Code:<input type="text" name="security code"/></p>
+		<input type="submit" value="Confirm">
+	</form> -->
+    <br/>
+	<form action="/www/index.html">
+            <input type="submit" value="Back to Home Page">
+        </form>
+
+</body>
+</html>
